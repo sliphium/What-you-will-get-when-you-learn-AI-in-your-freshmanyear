@@ -4,9 +4,10 @@
 .vscode/
 trace-*jsonl
 #屏蔽聊天记忆
-memory.json
-*.json
-*.jsonl
+memory*.json
+#屏蔽派生数据：向量库与运行日志都由 class.txt / 代码生成，可随时重建
+chroma_db/
+logs/
 #屏蔽Python缓存
 __pycache__/
 *.pyc
